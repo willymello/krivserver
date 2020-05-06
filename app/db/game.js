@@ -6,7 +6,7 @@ module.exports = db.define('game', {
     type: Sequelize.STRING,
     allowNull:false
   },
-  createdAt: {
+  created_on: {
     type: Sequelize.DATE,
     allowNull:false,
     defaultValue: Sequelize.NOW

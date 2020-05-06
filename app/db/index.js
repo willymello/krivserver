@@ -2,19 +2,18 @@
 require('sequelize')
 
 const db = require('./database')
-const DM = require('./dungeonMaster')
-const Player = require('./player')
+// const DM = require('./dungeonMaster')
+const User = require('./user')
 const Game = require('./game')
 const Character = require('./character')
 
 Player.hasMany(Character)
 Character.belongsTo(Game)
-DM.hasMany(Game)
+User.hasMany(Game)
 
 module.exports = {
   db,
-  DM,
-  Player,
+  User,
   Game,
   Character
 }

@@ -1,6 +1,8 @@
 const Sequelize = require('sequelize')
 const db = require('./database')
 
+//creating this cause i thought i would have 2 types of users, but godmode /isDM is probably better
+
 module.exports = db.define('DM', {
   email: {
     type: Sequelize.STRING,
@@ -10,7 +12,7 @@ module.exports = db.define('DM', {
     type: Sequelize.STRING,
     allowNull:false
   },
-  createdAt: {
+  created_on: {
     type: Sequelize.DATE,
     allowNull:false,
     defaultValue: Sequelize.NOW

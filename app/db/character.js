@@ -52,7 +52,7 @@ module.exports = db.define('character', {
     defaultValue: 0
   },
 
-  createdAt: {
+  created_on: {
     type: Sequelize.DATE,
     allowNull:false,
     defaultValue: Sequelize.NOW
