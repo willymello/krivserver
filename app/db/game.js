@@ -6,6 +6,10 @@ module.exports = db.define('game', {
     type: Sequelize.STRING,
     allowNull:false
   },
+  dm: {
+    type: Sequelize.INTEGER,
+    allowNull: false
+  },
   created_on: {
     type: Sequelize.DATE,
     allowNull:false,

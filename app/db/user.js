@@ -24,6 +24,11 @@ module.exports = db.define('user', {
     allowNull:false,
     defaultValue: false
   },
+  DMgames: {
+    type: Sequelize.ARRAY(Sequelize.INTEGER),
+    allowNull: true,
+    defaultValue: null
+  },
   created_on: {
     type: Sequelize.DATE,
     allowNull:false,

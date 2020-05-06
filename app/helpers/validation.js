@@ -1,4 +1,4 @@
-const env = require('../../env')
+
 const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
 
@@ -54,7 +54,7 @@ const generateUserToken = (email, id, godMode, first_name, last_name) => {
     first_name,
     last_name
   },
-  env.secret, {expiresInL: '3d'})
+  process.env.KRIV_SECRET, {expiresInL: '3d'})
   return token
 }
 

@@ -7,7 +7,7 @@ const app = express()
 
 require('babel-polyfill') 
 const cors = require('cors');
-const env = ('./env');
+
 
 //logging
 app.use(volleyball)
